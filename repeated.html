@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأخطاء المتكررة</title>
+    <link rel="icon" type="image/png" href="https://f.top4top.io/p_38617dfm01.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="auth-modal" class="auth-overlay" style="display:none;">
+        <div class="auth-box">
+            <div id="auth-choice">
+                <h2>مرحباً بك 👋</h2>
+                <p class="auth-subtitle">سجّل الدخول أو أنشئ حساباً جديداً للمتابعة</p>
+                <button id="google-login-btn" type="button" class="btn-google">
+                    <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.9 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 5.1 29.5 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21c0-1.2-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.6 18.9 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.5 5.1 29.5 3 24 3c-7.7 0-14.3 4.3-17.7 10.7z"/><path fill="#4CAF50" d="M24 45c5.4 0 10.3-1.8 14-5l-6.5-5.5C29.4 36.4 26.9 37 24 37c-5.3 0-9.7-3.1-11.3-7.6l-6.6 5.1C9.6 40.6 16.2 45 24 45z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.2 5.5l6.5 5.5C39.3 37.4 43 31.9 43 24c0-1.2-.1-2.4-.4-3.5z"/></svg>
+                    الدخول عبر جوجل
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile-modal" class="auth-overlay" style="display:none;">
+        <div class="auth-box">
+            <h2>تعديل الملف الشخصي</h2>
+            <div class="profile-preview">
+                <img id="profile-modal-avatar" src="" alt="الصورة الحالية">
+            </div>
+            <div class="form-group">
+                <label>اختر صورة جديدة</label>
+                <input type="file" id="profile-image-input" accept="image/*">
+            </div>
+            <button id="btn-save-profile" type="button">حفظ الصورة</button>
+            <button id="btn-close-profile" type="button" class="btn-secondary">إغلاق</button>
+        </div>
+    </div>
+
+    <nav>
+        <button id="nav-burger" class="burger-btn" type="button" aria-label="فتح القائمة">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">إضافة خطأ</a>
+            <a href="history.html">الأيام</a>
+            <a href="unreviewed.html">غير المراجعة</a>
+            <a href="repeated.html" class="active">المتكررة</a>
+            <a href="stats.html">الإحصائيات</a>
+        </div>
+        <div class="nav-logo"><img src="https://f.top4top.io/p_38617dfm01.png" alt="شعار دفتر أخطاء القدرات"></div>
+        <div class="nav-profile">
+            <button id="profile-avatar-btn" class="avatar-btn" type="button">
+                <img id="profile-avatar-img" src="" alt="صورة المستخدم" style="display:none;">
+                <span id="profile-avatar-fallback">؟</span>
+            </button>
+            <div id="profile-menu" class="profile-menu">
+                <button id="menu-edit-profile" type="button">تعديل الملف الشخصي</button>
+                <button id="menu-logout" type="button">تسجيل الخروج</button>
+                <button id="menu-delete-account" type="button">حذف الحساب</button>
+            </div>
+        </div>
+    </nav>
+
+        <div class="container">
+        <h2>الأخطاء المتكررة</h2>
+        <div id="errors-container" style="margin-top:15px;"></div>
+    </div>
+    <div id="toast"></div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
