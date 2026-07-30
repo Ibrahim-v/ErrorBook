@@ -115,7 +115,6 @@ function updateAvatarUI(user) {
     }
 }
 
-
 function setupMobileNav() {
     const burger = document.getElementById("nav-burger");
     const links = document.querySelector(".nav-links");
